@@ -3,13 +3,6 @@
 RewriteEngine On
 RewriteBase /PATH_TO_BLOG_DIR/ # EDIT THIS!
 
-Redirect 301 /blog/about-dr-keen http://www.angelakeen.com/about-dr-keen
-Redirect 301 /blog/procedures http://www.angelakeen.com/procedures
-Redirect 301 /blog/before-and-afters http://www.angelakeen.com/before-and-afters
-Redirect 301 /blog/products http://www.angelakeen.com/products
-Redirect 301 /blog/contact http://www.angelakeen.com/contact
-Redirect 301 /blog/blog http://www.angelakeen.com/blog
-
 # add a trailing slash to /wp-admin
 RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
 RewriteCond %{REQUEST_FILENAME} -f [OR]
