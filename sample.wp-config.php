@@ -17,7 +17,7 @@
 // ========================
 // Define Wordpress Theme and Plugin directories
 
-define( 'BLOG_PATH', 'http://localhost/PATH_TO_BLOG_DIR' ); // EDIT THIS!
+define( 'BLOG_PATH', 'http://localhost/PATH_TO_WP_DIR' ); // EDIT THIS!
 
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
 define( 'WP_CONTENT_URL', BLOG_PATH . '/wp-content' );

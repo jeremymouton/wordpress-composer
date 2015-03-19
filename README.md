@@ -8,8 +8,8 @@
 Install Wordpress core files:
 
 - `~$ composer install`
-- Rename `sample.htaccess` to `.htaccess`; and edit `PATH_TO_BLOG_DIR`.
-- Rename `sample.wp-config.php` to `wp-config.php`; and edit `PATH_TO_BLOG_DIR` + database connection settings.
+- Rename `sample.htaccess` to `.htaccess`; and edit `PATH_TO_WP_DIR`.
+- Rename `sample.wp-config.php` to `wp-config.php`; and edit `PATH_TO_WP_DIR` + database connection settings.
 
 
 ## Modify install path
