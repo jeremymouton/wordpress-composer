@@ -17,14 +17,18 @@
 // ========================
 // Define Wordpress Theme and Plugin directories
 
-define( 'BLOG_PATH', 'http://localhost/PATH_TO_WP_DIR' ); // EDIT THIS!
+// ======================
+// WP_SITE_PATH
+// Route to custom theme/plugins directories
+define( 'WP_SITE_PATH', 'http://localhost/PATH_TO_SITE' );
+// ======================
 
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
-define( 'WP_CONTENT_URL', BLOG_PATH . '/wp-content' );
+define( 'WP_CONTENT_URL', WP_SITE_PATH . '/wp-content' );
 
 define( 'WP_PLUGIN_DIR', dirname( __FILE__ ) . '/wp-content/plugins' );
 define( 'PLUGINDIR', dirname( __FILE__ ) . '/wp-content/plugins' ); // old var for old plugins
-define( 'WP_PLUGIN_URL', BLOG_PATH . '/wp-content/plugins');
+define( 'WP_PLUGIN_URL', WP_SITE_PATH . '/wp-content/plugins');
 
 
 // ** MySQL settings - You can get this info from your web host ** //

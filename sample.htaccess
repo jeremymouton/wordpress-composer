@@ -1,7 +1,7 @@
 <IfModule mod_rewrite.c>
 
 RewriteEngine On
-RewriteBase /PATH_TO_WP_DIR/ # EDIT THIS!
+# RewriteBase /PATH_TO_SITE/
 
 # add a trailing slash to /wp-admin
 RewriteRule ^([_0-9a-zA-Z-]+/)?wp-admin$ $1wp-admin/ [R=301,L]
