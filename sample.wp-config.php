@@ -14,22 +14,27 @@
  * @package WordPress
  */
 
-// ========================
-// Define Wordpress Theme and Plugin directories
 
-// ======================
-// WP_SITE_PATH
-// Route to custom theme/plugins directories
-define( 'WP_SITE_PATH', 'http://localhost/PATH_TO_SITE' );
-// ======================
+/*
+ * Define Wordpress Theme and Plugin directories
+ *
+ * Reroute to custom theme/plugins directories
+ * Use a trailing slash.
+ *
+ * i.e.: - http://wordpress.com/
+ *       - http://localhost/wordpress/
+ */
 
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
-define( 'WP_CONTENT_URL', WP_SITE_PATH . '/wp-content' );
+define( 'WP_SITE_PATH', '' );
 
-define( 'WP_PLUGIN_DIR', dirname( __FILE__ ) . '/wp-content/plugins' );
-define( 'PLUGINDIR', dirname( __FILE__ ) . '/wp-content/plugins' ); // old var for old plugins
-define( 'WP_PLUGIN_URL', WP_SITE_PATH . '/wp-content/plugins');
+define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . 'wp-content' );
+define( 'WP_CONTENT_URL', WP_SITE_PATH . 'wp-content' );
 
+define( 'WP_PLUGIN_DIR', dirname( __FILE__ ) . 'wp-content/plugins' );
+define( 'PLUGINDIR', dirname( __FILE__ ) . 'wp-content/plugins' ); // old var for old plugins
+define( 'WP_PLUGIN_URL', WP_SITE_PATH . 'wp-content/plugins');
+
+/* ***************************************** */
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
@@ -90,8 +95,10 @@ define('WP_DEBUG', false);
 /* That's all, stop editing! Happy blogging. */
 
 
-// ========================
-// Define Wordpress Core path
+/*
+ * Define Wordpress Core path
+ * 
+ */
 
 if ( !defined( 'ABSPATH' ) )
 define( 'ABSPATH', dirname( __FILE__ ) . '/wp/' );
