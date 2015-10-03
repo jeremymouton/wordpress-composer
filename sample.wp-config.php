@@ -19,20 +19,19 @@
  * Define Wordpress Theme and Plugin directories
  *
  * Reroute to custom theme/plugins directories
- * Use a trailing slash.
+ * No trailing slash.
  *
- * i.e.: - http://wordpress.com/
- *       - http://localhost/wordpress/
  */
 
 define( 'WP_SITE_PATH', '' );
+// define( 'WP_SITE_PATH', 'http://localhost/wordpress' );
 
-define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . 'wp-content' );
-define( 'WP_CONTENT_URL', WP_SITE_PATH . 'wp-content' );
+define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
+define( 'WP_CONTENT_URL', WP_SITE_PATH . '/wp-content' );
 
-define( 'WP_PLUGIN_DIR', dirname( __FILE__ ) . 'wp-content/plugins' );
-define( 'PLUGINDIR', dirname( __FILE__ ) . 'wp-content/plugins' ); // old var for old plugins
-define( 'WP_PLUGIN_URL', WP_SITE_PATH . 'wp-content/plugins');
+define( 'WP_PLUGIN_DIR', dirname( __FILE__ ) . '/wp-content/plugins' );
+define( 'PLUGINDIR', dirname( __FILE__ ) . '/wp-content/plugins' ); // old var for old plugins
+define( 'WP_PLUGIN_URL', WP_SITE_PATH . '/wp-content/plugins');
 
 /* ***************************************** */
 

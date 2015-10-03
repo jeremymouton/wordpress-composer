@@ -84,6 +84,11 @@ Thumbs.db
 !sample.wp-config.php
  
 # track these mu-plugins, plugins, and themes
-# add your own entries here
-!wp-content/plugins/plugin-name/
-!wp-content/themes/theme-name/
+
+# ======================
+# THEMES
+# !wp-content/plugins/plugin-name/
+
+# ======================
+# PLUGINS
+# !wp-content/themes/theme-name/

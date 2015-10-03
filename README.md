@@ -8,14 +8,14 @@
 #### 1. Configure custom paths
 
 ###### wp-config.php
-- Rename `sample.wp-config.php` to `wp-config.php`
-- Edit `WP_SITE_PATH` with site path (i.e `http://localhost/wordpress/`, use a trailing slash)
+- Duplicate `sample.wp-config.php` to `wp-config.php`
+- Edit `WP_SITE_PATH` with site path (i.e `http://localhost/PATH_TO_SITE`, no trailing slash)
 - Configure database settings
 - Replace salt ([secret-key service](https://api.wordpress.org/secret-key/1.1/salt/))
 
 ###### .htaccess
-- Rename `sample.htaccess` to `.htaccess`
-- **If accessing site via http://localhost/:** <br> Uncomment `RewriteBase` and edit `PATH_TO_SITE` (same as `WP_SITE_PATH` in `wp-config.php`, but without `http://localhost/` and with trailing slash).
+- Duplicate `sample.htaccess` to `.htaccess`
+- **If accessing site via http://localhost/:** <br> Uncomment `RewriteBase` and edit `PATH_TO_SITE` (same as `PATH_TO_SITE` in `wp-config.php`, but without `http://localhost/` and with trailing slash).
 
 #### 2. Add wp-content files
 
