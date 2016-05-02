@@ -13,41 +13,41 @@ composer.lock
 # ignore everything in the root except the "wp-content" directory.
 /*
 !wp-content/
- 
+
 # ignore everything in the "wp-content" directory, except:
 # mu-plugins, plugins, and themes directories
 wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
 !wp-content/themes/
- 
+
 # ignore all mu-plugins, plugins, and themes
 # unless explicitly whitelisted at the end of this file
 wp-content/mu-plugins/*
 wp-content/plugins/*
 wp-content/themes/*
- 
+
 # ignore all files starting with . or ~
 .*
 ~*
- 
+
 # ignore node dependency directories (used by grunt)
 node_modules/
- 
+
 # ignore OS generated files
 ehthumbs.db
 Thumbs.db
- 
+
 # ignore Editor files
 *.sublime-project
 *.sublime-workspace
 *.komodoproject
- 
+
 # ignore log files and databases
 *.log
 *.sql
 *.sqlite
- 
+
 # ignore compiled files
 *.com
 *.class
@@ -55,7 +55,7 @@ Thumbs.db
 *.exe
 *.o
 *.so
- 
+
 # ignore packaged files
 *.7z
 *.dmg
@@ -65,11 +65,11 @@ Thumbs.db
 *.rar
 *.tar
 *.zip
- 
+
 # -------------------------
 # BEGIN Whitelisted Files
 # -------------------------
- 
+
 # track these files, if they exist
 !.gitignore
 !.gitkeep
@@ -82,13 +82,13 @@ Thumbs.db
 !index.php
 !sample.htaccess
 !sample.wp-config.php
- 
+
 # track these mu-plugins, plugins, and themes
 
 # ======================
-# THEMES
+# PLUGINS
 # !wp-content/plugins/plugin-name/
 
 # ======================
-# PLUGINS
+# THEMES
 # !wp-content/themes/theme-name/
